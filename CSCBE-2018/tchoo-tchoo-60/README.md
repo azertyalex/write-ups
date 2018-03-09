@@ -19,6 +19,7 @@ When visiting the website we are greeted by a swagger, I never would have though
 The challenge is pretty straightforward, get Thomas' train information.
 First we create a user to get an apikey
 `respone body`
+
 ```{
   "apikey": "0a39db4c-ea0a-4115-81e0-6369a6400077",
   "name": "cscbe"
@@ -26,7 +27,8 @@ First we create a user to get an apikey
 
 The next step is ask info about the top trains, see what's going on.
 `respone body`
-```[
+
+```
   {
     "name": "Thomas",
     "position": 1
@@ -51,6 +53,7 @@ The next step is ask info about the top trains, see what's going on.
 
 Creating a train gives us 
 `response body`
+
 ```
 {
   "id": "0981be8db35498a5acc8c5cbfc26970842905d18",
