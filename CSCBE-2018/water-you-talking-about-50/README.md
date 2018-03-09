@@ -27,7 +27,7 @@ Connection: close
 Upgrade-Insecure-Requests: 1
 ```
 
-I look at the request in Burp Suite and try a few basic directory traversal tricks, still nothing...
+I look at the request in Burp Suite and try a few basic tricks, still nothing...
 However, when fiddling around with the language cookie I noticed some php errors turned up! Aha! We have some LFI going on here!
 
 ![php_error]( https://raw.githubusercontent.com/azertyalex/write-ups/master/CSCBE-2018/water-you-talking-about-50/php_error.jpg "php_error")
