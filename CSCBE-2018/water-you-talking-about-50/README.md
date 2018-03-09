@@ -28,12 +28,12 @@ Upgrade-Insecure-Requests: 1
 ```
 
 I look at the request in Burp Suite and try a few basic tricks, still nothing...
-However, when fiddling around with the language cookie I noticed some php errors turned up! Aha! We have some LFI going on here!
+However, when fiddling around with the language cookie I noticed some php errors turned up! Aha! We have some file inclusion going on here!
 
 ![php_error]( https://raw.githubusercontent.com/azertyalex/write-ups/master/CSCBE-2018/water-you-talking-about-50/php_error.jpg "php_error")
 
 Trying to get /etc/passwd will not work because .php is appended and trying to use string terminators like %00 won't work, we have to try something else here. I tried to include remote files by specifying a URL as parameter, sadly allow_url_include was turned off so that failed.
-PHP has a thing called filter, via this command we can use `php://filter/convert.base64-encode/resource=index` as a payload to get RCE in our lang cookie to get the php sourcecode of the index page in a base64 string. Now it was simply finding the right file that contains the flag and surely enough `php://filter/convert.base64-encode/resource=ru` gave us the flag!
+PHP has a thing called filter, via this command we can use `php://filter/convert.base64-encode/resource=index` as a payload to get code execution in our lang cookie to get the php sourcecode of the index page in a base64 string. Now it was simply finding the right file that contains the flag and surely enough `php://filter/convert.base64-encode/resource=ru` gave us the flag!
 
 ![ru.php in base64]( https://raw.githubusercontent.com/azertyalex/write-ups/master/CSCBE-2018/water-you-talking-about-50/ru.jpg "ru.php in base64")
 
