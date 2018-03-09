@@ -19,7 +19,7 @@ When visiting the website we are greeted by a swagger, I never would have though
 The challenge is pretty straightforward, get Thomas' train information.
 First we create a user to get an apikey
 
-`respone body`
+`response body`
 
 ```
 {
@@ -30,7 +30,7 @@ First we create a user to get an apikey
 
 The next step is ask info about the top trains, see what's going on.
 
-`respone body`
+`response body`
 
 ```
   {
