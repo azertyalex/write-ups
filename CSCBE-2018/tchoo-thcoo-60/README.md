@@ -11,9 +11,9 @@
 
 I do not have the description anymore but it said something along the lines of *Thomas has lost data about his train, can you help him get it back?*
 
-the full site can be seen [here](https://raw.githubusercontent.com/azertyalex/write-ups/master/CSCBE-2018/tchoo-tchoo/full_site.png "https://raw.githubusercontent.com/azertyalex/write-ups/master/CSCBE-2018/tchoo-tchoo/full_site.png")
+the full site can be seen [here](https://raw.githubusercontent.com/azertyalex/write-ups/master/CSCBE-2018/tchoo-tchoo-60/full_site.png "https://raw.githubusercontent.com/azertyalex/write-ups/master/CSCBE-2018/tchoo-tchoo/full_site.png")
 
-![index](https://raw.githubusercontent.com/azertyalex/write-ups/master/CSCBE-2018/tchoo-tchoo/index.jpg "index")
+![index](https://raw.githubusercontent.com/azertyalex/write-ups/master/CSCBE-2018/tchoo-tchoo-60/index.jpg "index")
 
 When visiting the website we are greeted by a swagger, I never would have thought to see a swagger in a CTF!
 The challenge is pretty straightforward, get Thomas' train information.
